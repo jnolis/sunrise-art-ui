@@ -34,8 +34,7 @@ server <- function(input, output) {
       GET(url, write_disk(output_file))
       list(
         src = output_file,
-        class = "img-fluid",
-        style = "max-height: 90vh;",
+        class = "img-fluid map-preview",
         alt = glue("Sunrise chart for {location_name()}")
       )
     })
