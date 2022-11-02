@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  
+    <head>
+        {{ headContent() }}
+      </head>
+
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sunrise Charts</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container-fluid" style="padding: 56px 0 0;">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+          <div id="downloaded_png" class="shiny-image-output"></div>
+        </div>
+      </div>
+      <div class="col-md-3 bg-light h-100">
+        <div class="text-center">
+          <h3>Sunrise chart creator</h3>
+        </div>
+        <hr>
+        <div class="p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" id="location_name">
+            <button class="btn btn-outline-secondary action-button shiny-bound-input" type="button"
+              id="location_update">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <button id="add_to_cart" type="button" class="btn btn-default action-button">Add to cart</button>
+  </div>
+</footer>   
+  </body>
+</html>
