@@ -1,0 +1,37 @@
+<div class="vh-100">
+    <div class="d-flex flex-column h-100">
+        {{ navbar }}
+        <main class="flex-shrink-0">
+            <div class="container-fluid navbar-padding">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div id="downloaded_png" class="shiny-image-output map-preview"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h3>Sunrise chart creator</h3>
+                        </div>
+                        <hr>
+                        <div class="p-2">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="location_name">
+                                <button class="btn btn-outline-secondary action-button shiny-bound-input" type="button"
+                                    id="location_update">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer mt-auto py-3 bg-light d-flex">
+            <div class="ms-auto">
+                <div class="px-3">
+                    <button id="add_to_cart" type="button" class="btn btn-primary action-button">Add to
+                        cart</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
